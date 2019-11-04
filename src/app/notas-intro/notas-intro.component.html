@@ -1,0 +1,62 @@
+<div *ngIf="tela == 'exe1'">
+    <div class="texto">
+        <h2  style="color:black">A música é uma forma de arte que se constitui na
+            combinação de vários sons e ritmos, seguindo
+            uma pré-organização ao logo do tempo. </h2>
+        </div>
+<div class="grid-container">
+<br>
+<div class="Container" >
+    <button (click)="inicialAvancar()" ><h2 id="vai">Próximo</h2></button>
+</div>
+
+</div>
+</div>
+    
+    <div *ngIf="tela == 'exe2'">
+        <div class="texto">
+            <h2  style="color:black">Notas musicais são sinais que representam
+                a altura do som musical. Apesar de serem
+                inúmeros os sons empregados na música,
+                para representá-los bastam apenas sete notas: </h2>
+            <h1 id="C" style="color:black">DÓ – RÉ – MI – FÁ – SOL – LÁ – SI</h1>
+            </div>
+    <div class="grid-container">
+    <br>
+    <div class="Container" >
+        <button (click)="inicialAvancar2()" ><h2 id="vai">Próximo</h2></button>
+    </div>
+    
+    </div>
+    </div>
+    
+                <div *ngIf="tela == 'exe3'">
+                        <div class="texto">
+                                <h2  style="color:black">Representação 
+                        do sistema alfabético introduzido pelo Papa Gregório Grande correspondem as sete letras.
+                                </h2>
+                                <h1 id="C" style="color:black">DÓ – RÉ – MI – FÁ – SOL – LÁ – SI</h1>
+                                <h1 id="C" style="color:black">C -    D -      E -     F -    G -    A -    B </h1>
+                        </div>
+                        <div class="grid-container">
+                        <br>
+                        <div class="Container" >
+                            <button (click)="resultado()" ><h2 id="vai">Próximo</h2></button>
+                        </div>
+                        
+                        </div>
+                        </div>
+    
+                        <div *ngIf="tela == 'resultado'">
+                                <div class="texto">
+                                    <h1>Parabéns você concluiu a Introdução!</h1>
+                                <br>
+    
+                                <br>
+                                <div class="Container" >
+                                    <button  [routerLink]="['/notas-musicais']" ><h2 id="vai">Continuar</h2></button>
+                                </div>
+                                
+                                </div>
+                                </div>
+    

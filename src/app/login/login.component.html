@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+
+    <form #formLogin="ngForm" (ngSubmit)="login(formLogin)">
+
+        <div class="login-box">
+            <h1>UP!MUSIC</h1>
+            <h2>Bem vindo</h2>
+            <div class="username">
+                <div class="form-group">
+                    <mat-form-field class="example-full-width" id="teste" >
+                        <input  matInput  value="Login" class="form-control" [(ngModel)]="nickname"
+                            name=nickname >
+                    </mat-form-field><small>Digite seu nome de usuário</small>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <mat-form-field class="example-full-width" id="teste">
+                    <input matInput  value="password" id="login-password" class="form-control"
+                        [(ngModel)]="senha" name=nickname type="password">
+                </mat-form-field><small>Digite sua senha</small>
+            </div>
+
+            <button [disabled]="formLogin.invalid" class="btn"> ENTRAR </button>
+
+            <div class="esqueci">
+                <p>Esqueci a senha</p>
+            </div>
+            <div class="registre">
+                <p>Ainda não tem conta ? <a [routerLink]="['/cadastro']" style="text-decoration: None;"> Registre-se </a> </p>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

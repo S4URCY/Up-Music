@@ -1,0 +1,243 @@
+.grid-container {
+  display: grid;
+ 
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+  position: absolute; 
+  width: 100%;
+  top: 50%;
+  padding: 60px 45px;
+  left: 50%;
+  transform: translate(-50%,40%);
+  flex-direction: row;
+  background: white;
+  
+
+ 
+ 
+}
+
+#teste{
+  color: rgb(255, 196, 0);
+}
+
+#card2{
+  box-shadow: 0 5px 0 #EBEBEB;
+}
+
+#do{
+  font-size: 50px;
+  color: #6B117A;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+#btn{
+  font-family: Arial;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  background: #B535F7;
+  color: white;
+  border-radius: 15px;
+  width: 190px;
+  box-shadow:0 5px 0  #6B117A;
+  display: inline-block;
+}
+#btn:hover{
+  background: rgb(184, 73, 240);
+  color: white;
+  box-shadow:0 5px 0 #6B117A;
+}
+
+#btn:active{
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.progress{
+  height: 15px;
+  background-color: #777;
+  position: relative;
+}
+
+.progress .progress-bar{
+ position: absolute;
+ height: 100%;
+ background-color: #add555;
+ animation: progress-animation 6s infinite;
+}
+
+
+@keyframes progress-animation{
+  0% { width: 0%; }
+  
+  100% { width: 30%}
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+ 
+}
+
+#teste{
+  color: rgb(255, 196, 0);
+}
+
+#card2{
+  box-shadow: 0 5px 0 #EBEBEB;
+}
+
+#do{
+  font-size: 50px;
+  color: #6B117A;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+#btn{
+  font-family: Arial;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  background: #B535F7;
+  color: white;
+  border-radius: 15px;
+  width: 190px;
+  box-shadow:0 5px 0  #6B117A;
+  display: inline-block;
+}
+#btn:hover{
+  background: rgb(184, 73, 240);
+  color: white;
+  box-shadow:0 5px 0 #6B117A;
+}
+
+#btn:active{
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.progress{
+  height: 15px;
+  background-color: #777;
+  position: relative;
+}
+
+.progress .progress-bar{
+ position: absolute;
+ height: 100%;
+ background-color: #add555;
+ animation: progress-animation 6s infinite;
+}
+
+
+@keyframes progress-animation{
+  0% { width: 0%; }
+  
+  100% { width: 30%}
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+ 
+}
+
+#teste{
+  color: rgb(255, 196, 0);
+}
+
+#card2{
+  box-shadow: 0 5px 0 #EBEBEB;
+}
+
+#do{
+  font-size: 50px;
+  color: #6B117A;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+#btn{
+  font-family: Arial;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  background: #B535F7;
+  color: white;
+  border-radius: 15px;
+  width: 190px;
+  box-shadow:0 5px 0  #6B117A;
+  display: inline-block;
+}
+#btn:hover{
+  background: rgb(184, 73, 240);
+  color: white;
+  box-shadow:0 5px 0 #6B117A;
+}
+
+#btn:active{
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.progress{
+  height: 15px;
+  background-color: #777;
+  position: relative;
+}
+
+.progress .progress-bar{
+ position: absolute;
+ height: 100%;
+ background-color: #add555;
+ animation: progress-animation 6s infinite;
+}
+
+
+@keyframes progress-animation{
+  0% { width: 0%; }
+  
+  100% { width: 30%}
+  
+}
+
+.navbar{
+  color: white;
+  
+}
+
+#h6{
+  cursor: pointer;
+}
+
+.logout{
+  text-align: right;
+}

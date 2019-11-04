@@ -1,0 +1,56 @@
+<div *ngIf="tela == 'exe1'">
+    <div class="texto">
+        <h2  style="color:black">Os acordes menores são bastante utilizados nas 
+            melodias das músicas. Após aprender as posições dos acordes maiores, 
+            você pode começar a treinar os acordes menores. </h2>
+        </div>
+<div class="grid-container">
+<br>
+<div class="Container" >
+    <button (click)="inicialAvancar()" ><h2 id="vai">Próximo</h2></button>
+</div>
+
+</div>
+</div>
+    
+    <div *ngIf="tela == 'exe2'">
+        <div class="texto">
+            <h2  style="color:black">Os acordes menores são bastante utilizados nas melodias das músicas. Após ap
+                 as posições dos acordes maiores, você pode começar a treinar os acordes menores. </h2>
+            </div>
+    <div class="grid-container">
+    <br>
+    <div class="Container" >
+        <button (click)="inicialAvancar2()" ><h2 id="vai">Próximo</h2></button>
+    </div>
+    
+    </div>
+    </div>
+    
+                <div *ngIf="tela == 'exe3'">
+                        <div class="texto">
+                                <h2  style="color:black">Os acordes menores são formados com as notas 1, 3 e 5
+                                     escala de cada acorde e também são chamados de tríades, assim como os maiores.   </h2>
+                                </div>
+                        <div class="grid-container">
+                        <br>
+                        <div class="Container" >
+                            <button (click)="resultado()" ><h2 id="vai">Próximo</h2></button>
+                        </div>
+                        
+                        </div>
+                        </div>
+    
+                        <div *ngIf="tela == 'resultado'">
+                                <div class="texto">
+                                    <h1>Parabéns você concluiu a Introdução!</h1>
+                                <br>
+    
+                                <br>
+                                <div class="Container" >
+                                    <button  [routerLink]="['/notas-musicais-menores']" ><h2 id="vai">Continuar</h2></button>
+                                </div>
+                                
+                                </div>
+                                </div>
+    

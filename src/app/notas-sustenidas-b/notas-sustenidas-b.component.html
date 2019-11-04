@@ -1,0 +1,52 @@
+<div *ngIf="tela == 'exe1'">
+    <div class="texto">
+        <h1>Qual sigla representa a nota “Sí Sustenido”?</h1>
+    <br>
+    <div class="grid-container">
+        <button id="btn" (click)="acertos()" (click)="desabilitarfuncao1()" [disabled]='campo2 && campo3'>
+            <h1 id="C" style="color:black">Não Existe</h1>
+        </button>
+        <button id="btn" (click)="erros()">
+            <h1 id="C" style="color:black">B#</h1>
+        </button>
+        <button id="btn" (click)="erros()">
+            <h1 id="C" style="color:black">B</h1>
+        </button>
+    </div>
+    <br>
+    <div class="Container" >
+        <button (click)="resultado()" [disabled]='!verdadeiro' ><h2 id="vai">Próximo</h2></button>
+    </div>
+    
+    </div>
+    </div>
+
+    
+                        <div *ngIf="tela == 'resultado'">
+                                <div class="texto">
+                                    <h1>Parabéns você ganhou!</h1>
+                                <br>
+                                <section *ngIf="estrelasSustenidasB == 1">
+                                        <i class="fa fa-star" id="teste" ></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                </section>
+                                <section *ngIf="estrelasSustenidasB == 2">
+                                    <i class="fa fa-star" id="teste" ></i>
+                                    <i class="fa fa-star" id="teste"></i>
+                                    <i class="fa fa-star"></i>
+                                </section>
+                                <section *ngIf="estrelasSustenidasB == 3">
+                                    <i class="fa fa-star" id="teste" ></i>
+                                    <i class="fa fa-star" id="teste"></i>
+                                    <i class="fa fa-star" id="teste"></i>
+                                </section>
+    
+                                <br>
+                                <div class="Container" >
+                                    <button  [routerLink]="['/notas-musicais-sustenidas']" ><h2 id="vai">Continuar</h2></button>
+                                </div>
+                                
+                                </div>
+                                </div>
+    

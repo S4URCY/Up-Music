@@ -1,0 +1,52 @@
+<div *ngIf="tela == 'exe1'">
+    <div class="texto">
+        <h2  style="color:black">O simbolo # chama-se sustenido 
+            e serve para aumentar um semitom  a nota natural. </h2></div>
+<div class="grid-container">
+<br>
+<div class="Container" >
+    <button (click)="inicialAvancar()" ><h2 id="vai">Próximo</h2></button>
+</div>
+
+</div>
+</div>
+    
+    <div *ngIf="tela == 'exe2'">
+        <div class="texto">
+            <h2  style="color:black">Ex. A nota dó ao colocarmos um 
+                sustenido junto a ela, será transformada em Dó# (dó sustenido). </h2></div>
+    <div class="grid-container">
+    <br>
+    <div class="Container" >
+        <button (click)="inicialAvancar2()" ><h2 id="vai">Próximo</h2></button>
+    </div>
+    
+    </div>
+    </div>
+    
+                <div *ngIf="tela == 'exe3'">
+                        <div class="texto">
+                                <h2  style="color:black">O sustenido pode ser aplicado em todas as notas, menos nas 
+                                    notas Si e Mi, pois são vizinhas diretas do Dó e do Fá.</h2></div>
+                        <div class="grid-container">
+                        <br>
+                        <div class="Container" >
+                            <button (click)="resultado()" ><h2 id="vai">Próximo</h2></button>
+                        </div>
+                        
+                        </div>
+                        </div>
+    
+                        <div *ngIf="tela == 'resultado'">
+                                <div class="texto">
+                                    <h1>Parabéns você concluiu a Introdução!</h1>
+                                <br>
+    
+                                <br>
+                                <div class="Container" >
+                                    <button  [routerLink]="['/notas-musicais-sustenidas']" ><h2 id="vai">Continuar</h2></button>
+                                </div>
+                                
+                                </div>
+                                </div>
+    

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body class="wrapper">
+
+    <div class="form">
+        <form #form="ngForm" (ngSubmit)="register(form)" method="POST">
+
+            <div class="login-box">
+                <h1>UP!MUSIC</h1>
+                <h2>Bem vindo</h2>
+            </div>
+
+            <label>
+
+                <input name="nome" type="text" class="input" ngModel required>
+
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+                <small id="testao">Digite seu nome</small>
+            </label>
+            <label>
+                <input name="email" type="email" class="form-control input" aria-describedby="emailHelp" ngModel required>
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+                <small id="testao">*Digite seu email</small>
+            </label>
+            <label>
+                <input name="usuario" type="text" class="input" ngModel required>
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+                <small id="testao">*Digite seu nome de usuário</small>
+            </label>
+            <label>
+                <input name="senha" type="password" class="input" ngModel required>
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+                <small id="testao">*Digite sua senha</small>
+            </label>
+            <button id="butao" type="submit" [disabled]="form.invalid" class="btn ">Criar conta</button>
+            <div class="registre">
+                <p>Já possui cadastro? <a [routerLink]="['/login']" style="text-decoration: None;"> Fazer login </a> </p>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
