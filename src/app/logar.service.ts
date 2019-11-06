@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LogarService {
-  apiURL = "http://dsi-backend-integration.herokuapp.com";
+  apiURL = "https://dsi-backend-integration.herokuapp.com";
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'aplication/json'
