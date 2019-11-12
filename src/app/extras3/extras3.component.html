@@ -1,0 +1,53 @@
+<div *ngIf="tela == 'exe1'">
+    <div class="texto">
+        <h1>Qual técnica e ultilizada para forma acordes sustenidos ?</h1>
+    <br>
+    <div class="grid-container">
+        <button id="btn" (click)="acertos()" (click)="desabilitarfuncao1()" [disabled]='campo2 && campo3'>
+            <h1 id="C" style="color:black">Pestana</h1>
+        </button>
+        <button id="btn" (click)="erros()">
+            <h1 id="C" style="color:black">Solo</h1>
+        </button>
+        <button id="btn" (click)="erros()">
+            <h1 id="C" style="color:black">Nenhuma</h1>
+        </button>
+    </div>
+    <br>
+    <div class="Container" >
+        <button (click)="resultado()" [disabled]='!verdadeiro' ><h2 id="vai">Próximo</h2></button>
+    </div>
+    
+    </div>
+    </div>
+
+    <div *ngIf="tela == 'resultado'">
+        <div class="texto">
+            <h1>Parabéns você ganhou!</h1>
+        <br>
+        <section *ngIf="extras3 == 1">
+                <i class="fa fa-star" id="teste" ></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+        </section>
+        <section *ngIf="extras3 == 2">
+            <i class="fa fa-star" id="teste" ></i>
+            <i class="fa fa-star" id="teste"></i>
+            <i class="fa fa-star"></i>
+        </section>
+        <section *ngIf="extras3 == 3">
+            <i class="fa fa-star" id="teste" ></i>
+            <i class="fa fa-star" id="teste"></i>
+            <i class="fa fa-star" id="teste"></i>
+        </section>
+
+        <br>
+        <div class="Container" >
+            <button  [routerLink]="['/extras']" ><h2 id="vai">Continuar</h2></button>
+        </div>
+        
+        </div>
+        </div>
+    
+    
+    

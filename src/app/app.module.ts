@@ -40,6 +40,19 @@ import { NotasSustenidasFComponent } from './notas-sustenidas-f/notas-sustenidas
 import { NotasSustenidasGComponent } from './notas-sustenidas-g/notas-sustenidas-g.component';
 import { NotasSustenidasAComponent } from './notas-sustenidas-a/notas-sustenidas-a.component';
 import { NotasSustenidasBComponent } from './notas-sustenidas-b/notas-sustenidas-b.component';
+import { CampoharmonicoIntroComponent } from './campoharmonico-intro/campoharmonico-intro.component';
+import { CampoharmonicoCComponent } from './campoharmonico-c/campoharmonico-c.component';
+import { CampoharmonicoDComponent } from './campoharmonico-d/campoharmonico-d.component';
+import { CampoharmonicoEComponent } from './campoharmonico-e/campoharmonico-e.component';
+import { CampoharmonicoFComponent } from './campoharmonico-f/campoharmonico-f.component';
+import { CampoharmonicoGComponent } from './campoharmonico-g/campoharmonico-g.component';
+import { CampoharmonicoAComponent } from './campoharmonico-a/campoharmonico-a.component';
+import { CampoharmonicoBComponent } from './campoharmonico-b/campoharmonico-b.component';
+import { ExtrasComponent } from './extras/extras.component';
+import { Extras1Component } from './extras1/extras1.component';
+import { Extras2Component } from './extras2/extras2.component';
+import { Extras3Component } from './extras3/extras3.component';
+import { Extras4Component } from './extras4/extras4.component';
 
 const rotas: Routes = [
   {path:'login', component:LoginComponent},
@@ -74,6 +87,20 @@ const rotas: Routes = [
   {path:'notas-sustenidas-g', component:NotasSustenidasGComponent},
   {path:'notas-sustenidas-a', component:NotasSustenidasAComponent},
   {path:'notas-sustenidas-b', component:NotasSustenidasBComponent},
+  {path:'campoharmonico-intro', component:CampoharmonicoIntroComponent},
+  {path:'campoharmonico-c', component:CampoharmonicoCComponent},
+  {path:'campoharmonico-d', component:CampoharmonicoDComponent},
+  {path:'campoharmonico-e', component:CampoharmonicoEComponent},
+  {path:'campoharmonico-f', component:CampoharmonicoFComponent},
+  {path:'campoharmonico-g', component:CampoharmonicoGComponent},
+  {path:'campoharmonico-a', component:CampoharmonicoAComponent},
+  {path:'campoharmonico-b', component:CampoharmonicoBComponent},
+  {path:'extras', component:ExtrasComponent},
+  {path:'extras1', component:Extras1Component},
+  {path:'extras2', component:Extras2Component},
+  {path:'extras3', component:Extras3Component},
+  {path:'extras4', component:Extras4Component},
+
 
 ];
 
@@ -112,7 +139,20 @@ const rotas: Routes = [
     NotasSustenidasFComponent,
     NotasSustenidasGComponent,
     NotasSustenidasAComponent,
-    NotasSustenidasBComponent
+    NotasSustenidasBComponent,
+    CampoharmonicoIntroComponent,
+    CampoharmonicoCComponent,
+    CampoharmonicoDComponent,
+    CampoharmonicoEComponent,
+    CampoharmonicoFComponent,
+    CampoharmonicoGComponent,
+    CampoharmonicoAComponent,
+    CampoharmonicoBComponent,
+    ExtrasComponent,
+    Extras1Component,
+    Extras2Component,
+    Extras3Component,
+    Extras4Component
  
   ],
   imports: [

@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-notas-menores-a',
   templateUrl: './notas-menores-a.component.html',
-  styleUrls: ['./notas-menores-a.component.css']
+  styleUrls: ['./notas-menores-a.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class NotasMenoresAComponent {
 

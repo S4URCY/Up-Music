@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import { EvolucaoService } from '../evolucao.service';
-import { Subscriber } from 'rxjs';
-import { NotasMusicaisComponent } from '../notas-musicais/notas-musicais.component';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class MenuComponent {
   

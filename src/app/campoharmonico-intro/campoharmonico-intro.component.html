@@ -1,0 +1,53 @@
+<div *ngIf="tela == 'exe1'">
+    <div class="texto">
+        <h2  style="color:black">Campo harmônico é um conjunto de acordes formados a partir de uma determinada escala. 
+             Tome como exemplo a escala de dó maior: C, D, E, F, G, A, B. </h2>
+        </div>
+<div class="grid-container">
+<br>
+<div class="Container" >
+    <button (click)="inicialAvancar()" ><h2 id="vai">Próximo</h2></button>
+</div>
+
+</div>
+</div>
+    
+    <div *ngIf="tela == 'exe2'">
+        <div class="texto">
+            <h2  style="color:black">Para cada nota dessa escala, iremos montar um acorde. Vamos ter, 
+                portanto, sete acordes, que serão os acordes do campo harmônico de dó maior.</h2></div>
+    <div class="grid-container">
+    <br>
+    <div class="Container" >
+        <button (click)="inicialAvancar2()" ><h2 id="vai">Próximo</h2></button>
+    </div>
+    
+    </div>
+    </div>
+    
+                <div *ngIf="tela == 'exe3'">
+                        <div class="texto">
+                                <h2  style="color:black">Para cada nota da escala, o acorde respectivo será formado utilizando o primeiro, o terceiro e
+                                     o quinto graus (contados a partir dessa nota, em cima dessa mesma escala). </h2></div>
+                        <div class="grid-container">
+                        <br>
+                        <div class="Container" >
+                            <button (click)="resultado()" ><h2 id="vai">Próximo</h2></button>
+                        </div>
+                        
+                        </div>
+                        </div>
+    
+                        <div *ngIf="tela == 'resultado'">
+                                <div class="texto">
+                                    <h1>Parabéns você concluiu a Introdução!</h1>
+                                <br>
+    
+                                <br>
+                                <div class="Container" >
+                                    <button  [routerLink]="['/campo-harmonico']" ><h2 id="vai">Continuar</h2></button>
+                                </div>
+                                
+                                </div>
+                                </div>
+    

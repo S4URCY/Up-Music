@@ -1,0 +1,103 @@
+<div *ngIf="tela == 'exe1'">
+    <div class="texto">
+        <h1>Qual notas estão inclusas no campo harmõnico de  “ Mí ”. ?</h1>
+    <br>
+    <div class="grid-container">
+        <button id="btn" (click)="erros()">
+            <h1 id="C" style="color:black">E - D - G</h1>
+        </button>
+        <button id="btn" (click)="erros()">
+            <h1 id="C" style="color:black">E - F - A</h1>
+        </button>
+        <button id="btn" (click)="acertos()" (click)="desabilitarfuncao1()" [disabled]='campo1 && campo2'>
+            <h1 id="C" style="color:black">E - G - B</h1>
+        </button>
+    </div>
+    <br>
+    <div class="Container" >
+        <button (click)="inicialAvancar()" [disabled]='!verdadeiro' ><h2 id="vai">Próximo</h2></button>
+    </div>
+    
+    </div>
+    </div>
+    
+    <div *ngIf="tela == 'exe2'">
+            <div class="texto">
+                <h1>Qual nota representa  3 ° de “ Mí ”. ?
+                        </h1>
+            <br>
+            <div class="grid-container">
+                <div class="grid-container">
+                    <button id="btn" (click)="erros()">
+                        <h1 id="C" style="color:black">D</h1>
+                    </button>
+                    <button id="btn" (click)="acertos()" (click)="desabilitarfuncao1()" [disabled]='campo1 && campo3'>
+                        <h1 id="C" style="color:black">G</h1>
+                    </button>
+                    <button id="btn" (click)="erros()">
+                        <h1 id="C" style="color:black">A</h1>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="Container" >
+                <button (click)="inicialAvancar2()" [disabled]='!verdadeiro'><h2 id="vai">Próximo</h2></button>
+            </div>
+            
+            </div>
+            </div>
+
+            <div *ngIf="tela == 'exe3'">
+                <div class="texto">
+                    <h1>Qual nota representa  5 ° de “ Mí ”. ?
+                            </h1>
+                <br>
+                <div class="grid-container">
+                    <div class="grid-container">
+                        <button id="btn" (click)="erros()">
+                            <h1 id="C" style="color:black">A</h1>
+                        </button>
+                        <button id="btn" (click)="erros()">
+                            <h1 id="C" style="color:black">G</h1>
+                        </button>
+                        <button id="btn" (click)="acertos()" (click)="desabilitarfuncao1()" [disabled]='campo1 && campo2'>
+                            <h1 id="C" style="color:black">B</h1>
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div class="Container" >
+                    <button (click)="resultado()" [disabled]='!verdadeiro'><h2 id="vai">Próximo</h2></button>
+                </div>
+                
+                </div>
+                </div>
+    
+                        <div *ngIf="tela == 'resultado'">
+                                <div class="texto">
+                                    <h1>Parabéns você ganhou!</h1>
+                                <br>
+                                <section *ngIf="estrelasCE == 1">
+                                        <i class="fa fa-star" id="teste" ></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                </section>
+                                <section *ngIf="estrelasCE == 2">
+                                    <i class="fa fa-star" id="teste" ></i>
+                                    <i class="fa fa-star" id="teste"></i>
+                                    <i class="fa fa-star"></i>
+                                </section>
+                                <section *ngIf="estrelasCE == 3">
+                                    <i class="fa fa-star" id="teste" ></i>
+                                    <i class="fa fa-star" id="teste"></i>
+                                    <i class="fa fa-star" id="teste"></i>
+                                </section>
+    
+                                <br>
+                                <div class="Container" >
+                                    <button  [routerLink]="['/campo-harmonico']" ><h2 id="vai">Continuar</h2></button>
+                                </div>
+                                
+                                </div>
+                                </div>
+    

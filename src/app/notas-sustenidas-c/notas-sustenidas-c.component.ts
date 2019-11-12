@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-notas-sustenidas-c',
   templateUrl: './notas-sustenidas-c.component.html',
-  styleUrls: ['./notas-sustenidas-c.component.css']
+  styleUrls: ['./notas-sustenidas-c.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class NotasSustenidasCComponent  {
 

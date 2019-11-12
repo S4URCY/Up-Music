@@ -1,0 +1,53 @@
+<div *ngIf="tela == 'exe1'">
+    <div class="texto">
+        <h1>Quantas notas mudam dos acordes menores em relação aos maiores ?</h1>
+    <br>
+    <div class="grid-container">
+        <button id="btn" (click)="acertos()" (click)="desabilitarfuncao1()" [disabled]='campo2 && campo3'>
+            <h1 id="C" style="color:black">1</h1>
+        </button>
+        <button id="btn" (click)="erros()">
+            <h1 id="C" style="color:black">3</h1>
+        </button>
+        <button id="btn" (click)="erros()">
+            <h1 id="C" style="color:black">2</h1>
+        </button>
+    </div>
+    <br>
+    <div class="Container" >
+        <button (click)="resultado()" [disabled]='!verdadeiro' ><h2 id="vai">Próximo</h2></button>
+    </div>
+    
+    </div>
+    </div>
+
+    <div *ngIf="tela == 'resultado'">
+        <div class="texto">
+            <h1>Parabéns você ganhou!</h1>
+        <br>
+        <section *ngIf="extras2 == 1">
+                <i class="fa fa-star" id="teste" ></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+        </section>
+        <section *ngIf="extras2 == 2">
+            <i class="fa fa-star" id="teste" ></i>
+            <i class="fa fa-star" id="teste"></i>
+            <i class="fa fa-star"></i>
+        </section>
+        <section *ngIf="extras2 == 3">
+            <i class="fa fa-star" id="teste" ></i>
+            <i class="fa fa-star" id="teste"></i>
+            <i class="fa fa-star" id="teste"></i>
+        </section>
+
+        <br>
+        <div class="Container" >
+            <button  [routerLink]="['/extras']" ><h2 id="vai">Continuar</h2></button>
+        </div>
+        
+        </div>
+        </div>
+    
+    
+    
