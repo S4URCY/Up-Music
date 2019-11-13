@@ -1,11 +1,10 @@
-import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { EvolucaoService } from '../evolucao.service';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
   

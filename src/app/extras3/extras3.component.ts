@@ -1,10 +1,9 @@
-import { Component, OnInit , ViewEncapsulation} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-extras3',
   templateUrl: './extras3.component.html',
-  styleUrls: ['./extras3.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./extras3.component.css']
 })
 export class Extras3Component {
 

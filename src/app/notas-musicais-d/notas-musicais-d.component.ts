@@ -1,10 +1,9 @@
-import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-notas-musicais-d',
   templateUrl: './notas-musicais-d.component.html',
-  styleUrls: ['./notas-musicais-d.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./notas-musicais-d.component.css']
 })
 export class NotasMusicaisDComponent {
 
