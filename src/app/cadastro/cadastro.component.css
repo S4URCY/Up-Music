@@ -11,7 +11,7 @@
 
 body {
     background: url(./assets/Desktop.jpg);
-    background-size: cover;
+    background-size: cover !important;
 }
 form {
     max-width: 350px;
