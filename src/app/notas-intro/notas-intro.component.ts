@@ -39,6 +39,13 @@ export class NotasIntroComponent  {
     this.campo3 = false
     }
 
+    inicialAvancar3() {
+      this.tela = 'exe4';
+      this.verdadeiro = false
+      this.campo1 = false
+      this.campo2 = false
+      this.campo3 = false
+      }
   resultado() {
   if (this.qtd_erros == 0){
       this.estrelasIntro = this.estrelasIntro + 3

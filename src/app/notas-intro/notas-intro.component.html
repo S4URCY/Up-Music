@@ -30,22 +30,39 @@
     </div>
     </div>
     
-                <div *ngIf="tela == 'exe3'">
+    <div *ngIf="tela == 'exe3'">
+        <div class="texto">
+                <h2  style="color:black">Representação 
+        do sistema alfabético introduzido pelo Papa Gregório Grande correspondem as sete letras.
+                </h2>
+                <h1 id="C" style="color:black">DÓ – RÉ – MI – FÁ – SOL – LÁ – SI</h1>
+                <h1 id="C" style="color:black">C -    D -      E -     F -    G -    A -    B </h1>
+        </div>
+        <div class="grid-container">
+        <br>
+        <div class="Container" >
+            <button (click)="inicialAvancar3()" ><h2 id="vai">Próximo</h2></button>
+        </div>
+        
+        </div>
+        </div>
+                <div *ngIf="tela == 'exe4'">
                         <div class="texto">
-                                <h2  style="color:black">Representação 
-                        do sistema alfabético introduzido pelo Papa Gregório Grande correspondem as sete letras.
-                                </h2>
-                                <h1 id="C" style="color:black">DÓ – RÉ – MI – FÁ – SOL – LÁ – SI</h1>
-                                <h1 id="C" style="color:black">C -    D -      E -     F -    G -    A -    B </h1>
+                                <h3  style="color:black">Quando falamos das três notas que formam os acordes, estamos falando da “tríade” de cada acorde. Esse 
+                                    nome existe para representar as notas básicas que formam um acorde específico.</h3>
+                                <h3 id="C" style="color:black">Na maior parte das vezes, essas notas são o 1º o 3º e o 5º graus, formando assim os acordes naturais. Nesse caso, podemos ter uma tríade menor ou uma tríade maior.</h3>
+                                <h3 id="C" style="color:black">Porém, podemos ter outras tríades também, formando acordes mais complexos, como por exemplo, uma tríade aumentada, uma tríade diminuta ou uma tríade sus4. Confira abaixo: </h3>       
+                                <h2 id="C" style="color:blue">
+                                    É formada pelos graus: 1º maior, 3º maior e quinta justa.</h2>
                         </div>
                         <div class="grid-container">
-                        <br>
                         <div class="Container" >
                             <button (click)="resultado()" ><h2 id="vai">Próximo</h2></button>
                         </div>
                         
                         </div>
                         </div>
+
     
                         <div *ngIf="tela == 'resultado'">
                                 <div class="texto">
