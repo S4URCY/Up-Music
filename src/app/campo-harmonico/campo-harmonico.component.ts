@@ -1,10 +1,9 @@
-import { Component, OnInit,ViewEncapsulation} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-campo-harmonico',
   templateUrl: './campo-harmonico.component.html',
-  styleUrls: ['./campo-harmonico.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./campo-harmonico.component.css']
 })
 export class CampoHarmonicoComponent implements OnInit {
 
